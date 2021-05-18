@@ -39,13 +39,13 @@ public class HomePageTest extends TestBase {
 	}
 
 	
-	@Test(enabled=false,priority=2)
+	@Test(enabled=true,priority=2)
 	public void verifyUserNameTest() {
 		Assert.assertTrue(homePage.verfyUserNameLable());
 	}
 
 
-	@Test(enabled=false,priority=3)
+	@Test(enabled=true,priority=3)
 	public void verifyContactLinkTest() {
 		contact = homePage.clickonContactsPageLink();
 	}
