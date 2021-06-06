@@ -1,4 +1,4 @@
-package util;
+package com.newstart.qa.util;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;

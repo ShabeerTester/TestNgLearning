@@ -1,4 +1,4 @@
-package util;
+package com.newstart.qa.util;
 
 import java.io.File;
 import java.util.Hashtable;

@@ -8,16 +8,19 @@ import java.util.Hashtable;
 
 public class ReadDataSet1 {
 
-    @Test(dataProvider = "fetchData")
-    public void printData(Hashtable<String, String> data){
-        System.out.println("String data: "+data.get("stringData"));
-        System.out.println("Numeric data: "+data.get("numericData"));
-        System.out.println("Date data: "+data.get("dateData"));
+    private int run = 1;
 
+    @Test(dataProvider = "fetchData")
+    public void printData(Hashtable<String, String> data) {
+        System.out.println("Test run " + run);
+        System.out.println("String data: " + data.get("stringData"));
+        System.out.println("Numeric data: " + data.get("numericData"));
+        System.out.println("Date data: " + data.get("dateData"));
+        run++;
     }
 
     @DataProvider
-    public Object[][] fetchData(){
-        return DataUtil.getTestData("TestData.xlsx","Data", getClass().getSimpleName());
+    public Object[][] fetchData() {
+        return DataUtil.getTestData("TestData.xlsx", "Data", getClass().getSimpleName());
     }
 }
